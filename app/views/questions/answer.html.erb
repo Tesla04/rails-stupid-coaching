@@ -1,0 +1,7 @@
+<form action="/answer">
+  <input type="text" name="question" value="<%= params[:question] %>">
+  <input type="submit" value="Ask!">
+</form>
+<h2>You asked: <%= params[:question] %></h2>
+<h2>Coach replied: <%= @answer %></h2>
+<a href='/ask'>Ask again</a>
